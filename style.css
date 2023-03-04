@@ -1,0 +1,92 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(V.jpg) no-repeat; 
+    background-size: cover;
+}
+.box{
+    width: 450px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    text-align: center;
+    margin: auto;
+    margin-top: 5%;
+    color: white;
+    font-family: sans-serif;
+    border-radius: 5%;
+    
+}
+.box-img{
+    border-radius: 5%;
+    width: 200px;
+    height: 200px;
+
+}
+.box h1{
+    font-size: 30px;
+    letter-spacing: 4px;
+    font-weight: 100;
+    
+    text-align: center;
+
+}
+.box h5{
+    font-size: 10px;
+    letter-spacing: 3px;
+    font-weight: 100; 
+    text-align: center;
+}
+.box p{
+    text-align: justify;
+}
+.u{
+    width: 400px;
+    text-align: center;
+}
+.change-txt li span{
+    position: relative;
+    margin: 5px 0;
+    line-height: 90px;
+}
+.change-txt li span ::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+   
+    animation: typing 3s steps(10) infinite;
+    height: 100%;
+}
+@keyframes typing{
+    40%,
+    60%{ 
+        left: calc(100% + 30px);
+    }
+    100%{
+        left: 0;
+    }
+
+}
+.wrapper .change-txt{
+    margin-right: 20px;
+    height: 90px;
+    line-height: 50px;
+    overflow: hidden;
+    text-align: center;
+    justify-content: center;
+}
+.change-txt li{
+    list-style: none;
+    color: white;
+    font-size: 30px;
+    font-weight:500;
+    position: relative;
+    top: 0;
+    animation: slide 3s steps(4) infinite;
+    text-align: center;
+}
+@keyframes slide{
+    100% {
+        top: -360px;
+    }
+}
